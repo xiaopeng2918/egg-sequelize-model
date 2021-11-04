@@ -8,13 +8,8 @@ $ open http://localhost:7001/
 
 
 # 1. 简介
-1. [Egg官方文档](https://eggjs.org/zh-cn/intro/quickstart.html) 
-初学Egg，还是学习到了很多知识，同时也踩了一些坑。接下来就简单的搭一个Egg+MySql的架子，方便后期直接使用，拒绝做简单重复的操作。
-
-2. 以下是官方对目录的介绍：
-![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/5d9210a924a446a6bb270fad71216c56~tplv-k3u1fbpfcp-watermark.image)
-3. 本示例源码地址：[查看源码](https://gitee.com/yunxing163/egg-mysql-basic.git)
-# 2.起步
+1. [Egg官方文档](https://eggjs.org/zh-cn/intro/quickstart.html)
+2. [sequelize官方文档](https://www.sequelize.com.cn/)
 ## 2.1 快速初始化
 官方推荐直接使用脚手架，只需几条简单指令，即可快速生成项目。
 ```
@@ -69,7 +64,7 @@ module.exports = appInfo => {
         dialect: 'mysql',
         host: 'localhost',
         port: 3306,
-        database: 'egg-mysql',
+        database: 'blog',
         username: "root",
         password: "123456"
     };
@@ -87,12 +82,10 @@ module.exports = appInfo => {
     };
 };
 ```
-OK! 以上配置以及项目初始化基本完成，接下来就开始 **敲代码**
+OK! 以上配置以及项目初始化基本完成
 
 # 3. 编写代码
-代码编写大部分会在`app`目录下进行。以下实例中，会对`egg-mysql`数据库进行增删改查操作，以下文件夹以及文件，在本项目中是少不了的。
 
-![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c5e584e109104822a9e5369577c0dec9~tplv-k3u1fbpfcp-watermark.image)
 ## 3.1 model层
 首先，在`app/model`文件夹中对模型进行定义
 ```js
@@ -342,12 +335,7 @@ module.exports = app => {
 };
 ```
 
-OK！  EggJS+MySQL实现简单的增删改查已经实现了。
+EggJS+MySQL实现简单的增删改查已经实现了。更多功能查看简介文档
 
 # 4.运行项目
 打开控制台：`npm run dev`,即可看到`http://127.0.0.1:7001`
-
----
-                                  👇👇👇👇👇记得单击加关注哦！！👇👇👇👇👇
-
-![文森软件工作室](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/eaf204532eee4d368389c019c9513a88~tplv-k3u1fbpfcp-watermark.image)
