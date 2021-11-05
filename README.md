@@ -6,7 +6,7 @@ $ npm run dev
 $ open http://localhost:7001/
 ```
 
-
+[参考](https://juejin.cn/post/6961266180678123534)
 # 1. 简介
 1. [Egg官方文档](https://eggjs.org/zh-cn/intro/quickstart.html)
 2. [sequelize官方文档](https://www.sequelize.com.cn/)
